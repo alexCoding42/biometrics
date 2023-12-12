@@ -8,6 +8,10 @@ export default function RootLayout() {
       <GestureHandlerRootView style={{ flex: 1 }}>
         <Stack>
           <Stack.Screen name="index" options={{ title: "Biometrics" }} />
+          <Stack.Screen
+            name="protected"
+            options={{ title: "Protected Screen" }}
+          />
         </Stack>
       </GestureHandlerRootView>
     </BiometricProvider>

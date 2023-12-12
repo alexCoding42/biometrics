@@ -1,7 +1,6 @@
 import { View, Text } from "react-native";
 import React from "react";
 import { FontAwesome5 } from "@expo/vector-icons";
-import { Link } from "expo-router";
 
 const ProtectedScreen = () => {
   return (
@@ -13,10 +12,11 @@ const ProtectedScreen = () => {
         backgroundColor: "white",
       }}
     >
-      <Text style={{ fontSize: 20, marginBottom: 20 }}>Protected Info</Text>
-      <FontAwesome5 name="lock" size={75} color="gray" />
+      <Text style={{ fontSize: 20, marginBottom: 20, textAlign: "center" }}>
+        You have now access to protected information.
+      </Text>
 
-      <Link href={"/protected/second"}>Next page</Link>
+      <FontAwesome5 name="lock" size={75} color="gray" />
     </View>
   );
 };

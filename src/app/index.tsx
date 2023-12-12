@@ -11,7 +11,7 @@ export default function HomeScreen() {
 
       <Text style={styles.title}>Biometrics</Text>
       <Text style={styles.description}>
-        Use FaceID and Fingerprint to unlock the next screens.
+        Use FaceID and Fingerprint to unlock the next screen.
       </Text>
 
       <Link href="/protected" asChild>
@@ -28,11 +28,12 @@ const styles = StyleSheet.create({
     padding: 8,
   },
   title: {
-    fontSize: 20,
+    fontSize: 22,
     fontWeight: "bold",
     marginBottom: 5,
   },
   description: {
-    fontSize: 16,
+    fontSize: 18,
+    marginBottom: 24,
   },
 });
